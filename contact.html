@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <h2 class="logo">M. Srinivasa Rao</h2>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="home.html">🏠 Home</a></li>
+        <li><a href="policies.html">📋 Policies</a></li>
+        <li><a href="about.html">👤 About</a></li>
+        <li><a href="contact.html">📞 Contact</a></li>
+    </ul>
+
+</nav>
+<section class="contact-page">
+
+<h1>Contact Us</h1>
+<h2>Request a FREE LIC Consultation</h2>
+
+<p>
+Fill in your details below and our LIC Advisor will contact you shortly.
+</p>
+
+<h2>Get FREE Consultation</h2>
+
+<p>📞 Phone: 9618745467</p>
+
+<p>📧 Email: srinivasrm9@gmail.com</p>
+
+<a href="tel:9618745467" class="call-btn">
+📞 Call Now
+</a>
+
+<br><br>
+
+<a href="https://wa.me/919618745467" class="call-btn">
+💬 WhatsApp
+</a>
+
+<h2>Office Location</h2>
+
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7639.225633237898!2d82.07128549999999!3d16.795927999999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1785984735849!5m2!1sen!2sin"
+width="100%"
+height="350"
+style="border:0; border-radius:15px;"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="strict-origin-when-cross-origin">
+</iframe>
+
+<h2>Book a Free Consultation</h2>
+
+<form class="contact-form" id="contactForm">
+
+<input
+type="text"
+id="customerName"
+placeholder="Your Name"
+required>
+
+<br><br>
+
+<input
+type="tel"
+id="customerPhone"
+placeholder="Phone Number"
+required>
+<small style="color:gray;">
+Please enter your 10-digit mobile number.
+</small>
+<br><br>
+
+<input
+type="number"
+id="customerAge"
+placeholder="Your Age"
+required>
+
+<br><br>
+
+<select id="policySelect" required>
+
+<option value="">Select Policy</option>
+
+<option>LIC Jeevan Anand</option>
+<option>LIC Jeevan Labh</option>
+<option>LIC New Endowment</option>
+<option>LIC New Money Back</option>
+<option>LIC Jeevan Umang</option>
+
+</select>
+
+<br><br>
+
+<textarea
+id="customerMessage"
+placeholder="Your Message (Optional)"
+rows="5">
+</textarea>
+
+<br><br>
+
+<button type="submit">
+Submit Enquiry
+</button>
+
+</form>
+<p id="successMessage" style="color:green;font-weight:bold;display:none;"></p>
+
+</section>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
+
+<script src="firebase.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

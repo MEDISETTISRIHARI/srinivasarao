@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="M. Srinivasa Rao - Trusted LIC Advisor with 18+ years of experience helping families choose the right LIC policy.">
+<meta name="keywords" content="LIC Advisor, LIC Insurance, Life Insurance, Srinivasa Rao, LIC Policies">
+ <meta name="author" content="M. Srinivasa Rao">
+<title>M. Srinivasa Rao | LIC Advisor</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="hero">
+
+  <nav class="navbar">
+
+    <h2 class="logo">LIC Agent - RCPM</h2>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="home.html">🏠 Home</a></li>
+        <li><a href="policies.html">📋 Policies</a></li>
+        <li><a href="about.html">👤 About</a></li>
+        <li><a href="contact.html">📞 Contact</a></li>
+    </ul>
+
+</nav> 
+
+    <div class="hero-content">
+
+        <div>
+<div class="advisor-profile">
+
+    <img src="images/dad - Copy.png" alt="M. Srinivasa Rao">
+
+    <h2>M. Srinivasa Rao</h2>
+
+    <p class="advisor-title">LIC Advisor</p>
+
+</div>
+      <h1 class="hero-heading">
+Secure Your Family's Future Today
+</h1>    
+
+  <p class="hero-subtitle">
+✔ Trusted LIC Advisor<br>
+✔ 18+ Years of Experience<br>
+✔ 1000+ Happy Families<br>
+✔ CM Club Member
+</p>
+
+            <p>
+
+                18+ Years of Trusted LIC Guidance
+                <br>
+                CM Club Member
+                <br>
+                1000+ Happy Policy Holders
+
+            </p>
+
+          <a href="contact.html" class="consult-btn">
+🚀 GET FREE CONSULTATION
+</a>
+
+        </div>
+
+        
+    </div>
+
+</header>
+
+<!-- Paste the Stats Section here -->
+
+<section class="stats">
+
+<div class="stat-card">
+<h2>18+</h2>
+<p>Years of Experience</p>
+</div>
+
+<div class="stat-card">
+<h2>1000+</h2>
+<p>Happy Policy Holders</p>
+</div>
+
+<div class="stat-card">
+<h2>CM</h2>
+<p>Club Member</p>
+</div>
+
+<div class="stat-card">
+<h2>24×7</h2>
+<p>Customer Support</p>
+</div>
+
+</section>
+
+<!-- Your existing Policies section starts below -->
+
+<section id="policies">
+    <div class="search-section">
+
+    <h2 class="section-title">Find the Right LIC Plan</h2>
+
+    <p class="search-text">
+        Search from our recommended LIC plans.
+    </p>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Policy..."
+        onkeyup="searchPolicies()">
+
+</div>
+
+    <h2 class="section-title">Popular LIC Plans</h2>
+
+   <div class="policy-container">
+
+<div class="policy-card">
+
+<img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600">
+
+<h3>LIC Jeevan Anand</h3>
+
+<p>Life insurance with savings benefits for long-term protection.</p>
+
+<p><b>Age:</b> 18-50 Years</p>
+
+<p><b>Premium:</b> Monthly / Quarterly / Half-Yearly / Yearly</p>
+
+<div class="policy-buttons">
+
+<button onclick="enquirePolicy('LIC Jeevan Anand')">
+💬 WhatsApp
+</button>
+
+<a href="tel:9618745467" class="call-btn">
+📞 Call
+</a>
+<a href="policy.html?plan=jeevan-anand" class="call-btn">
+📖 Know More
+</a>
+</div>
+
+</div>
+
+<div class="policy-card">
+
+<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600">
+
+<h3>LIC Jeevan Labh</h3>
+
+<p>Limited premium payment with guaranteed maturity benefits.</p>
+
+<p><b>Age:</b> 8-59 Years</p>
+
+<p><b>Premium:</b> Monthly / Quarterly / Half-Yearly / Yearly</p>
+
+<div class="policy-buttons">
+
+<button onclick="enquirePolicy('LIC Jeevan Labh')">
+💬 WhatsApp
+</button>
+
+<a href="tel:9618745467" class="call-btn">
+📞 Call
+</a>
+<a href="policy.html?plan=jeevan-labh" class="call-btn">
+📖 Know More
+</a>
+</div>
+
+</div>
+
+<div class="policy-card">
+
+<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600">
+
+<h3>LIC New Endowment</h3>
+
+<p>Protection with guaranteed savings and maturity amount.</p>
+
+<p><b>Age:</b> 18-55 Years</p>
+
+<p><b>Premium:</b> Monthly / Quarterly / Half-Yearly / Yearly</p>
+
+<div class="policy-buttons">
+
+<button onclick="enquirePolicy('LIC New Endowment')">
+💬 WhatsApp
+</button>
+
+<a href="tel:9618745467" class="call-btn">
+📞 Call
+</a>
+<a href="policy.html?plan=new-endowment" class="call-btn">
+📖 Know More
+</a>
+</div>
+</div>
+<div class="policy-card">
+
+<img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=600">
+
+<h3>LIC New Money Back</h3>
+
+<p>Regular survival benefits with life cover.</p>
+
+<p><b>Age:</b> 13-50 Years</p>
+
+<p><b>Premium:</b> Monthly / Quarterly / Half-Yearly / Yearly</p>
+
+<div class="policy-buttons">
+
+<button onclick="enquirePolicy('LIC New Money Back')">
+💬 WhatsApp
+</button>
+
+<a href="tel:9618745467" class="call-btn">
+📞 Call
+</a>
+<a href="policy.html?plan=new-money-back" class="call-btn">
+📖 Know More
+</a>
+</div>
+
+</div>
+<div class="policy-card">
+
+<img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=600">
+
+<h3>LIC Jeevan Umang</h3>
+
+<p>Lifetime income with protection and maturity benefits.</p>
+
+<p><b>Age:</b> 90 Days - 55 Years</p>
+
+<p><b>Premium:</b> Monthly / Quarterly / Half-Yearly / Yearly</p>
+
+<div class="policy-buttons">
+
+<button onclick="enquirePolicy('LIC Jeevan Umang')">
+💬 WhatsApp
+</button>
+
+<a href="tel:9618745467" class="call-btn">
+📞 Call
+</a>
+<a href="policy.html?plan=jeevan-umang" class="call-btn">
+📖 Know More
+</a>
+</div>
+</div>
+
+</div>
+</section>
+<section class="why-us">
+
+    <h2 class="section-title">Why Choose Our LIC Services?</h2>
+
+    <div class="why-container">
+
+        <div class="why-card">
+            <h3>🛡️ Trusted Advice</h3>
+            <p>18+ years of helping families choose suitable LIC plans.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>🏆 CM Club Member</h3>
+            <p>Recognized for excellent service and customer satisfaction.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>👨‍👩‍👧 1000+ Happy Clients</h3>
+            <p>Serving hundreds of families with long-term support.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>📞 Lifetime Support</h3>
+            <p>Policy assistance, premium reminders and claim guidance.</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="reviews">
+
+<h2 class="section-title">What Our Customers Say</h2>
+
+<div class="review-container">
+
+<div class="review-card">
+★★★★★
+<p>Very helpful guidance. Explained every policy clearly and patiently.</p>
+<h4>— Rajesh Kumar</h4>
+</div>
+
+<div class="review-card">
+★★★★★
+<p>Excellent service. The policy selection process was simple and transparent.</p>
+<h4>— Priya Sharma</h4>
+</div>
+
+<div class="review-card">
+★★★★★
+<p>Highly recommended. Great support even after purchasing the policy.</p>
+<h4>— Suresh Reddy</h4>
+</div>
+
+</div>
+
+</section>
+<section class="faq">
+
+<h2 class="section-title">Frequently Asked Questions</h2>
+
+<div class="faq-item">
+<h3>Who should buy an LIC policy?</h3>
+<p>Anyone looking for long-term financial security and protection for their family.</p>
+</div>
+
+<div class="faq-item">
+<h3>Can I pay premiums monthly?</h3>
+<p>Many LIC plans offer monthly, quarterly, half-yearly, and yearly premium options.</p>
+</div>
+
+<div class="faq-item">
+<h3>Can I get free advice before buying?</h3>
+<p>Yes. Contact us anytime for a free consultation to understand which plan may suit your needs.</p>
+</div>
+
+</section>
+<section class="disclaimer">
+
+<h2>Disclaimer</h2>
+
+<p>
+This website is managed by an independent LIC Advisor to provide information and consultation about LIC insurance plans. It is not the official website of the Life Insurance Corporation of India (LIC).
+</p>
+
+</section>
+
+<section class="social-links">
+
+<h2>Follow Us</h2>
+
+<a href="#">📘 Facebook</a>
+
+<a href="#">📷 Instagram</a>
+
+<a href="#">▶ YouTube</a>
+
+</section>
+<footer class="footer">
+
+<h2>M.Srinivasa Rao LIC Advisor</h2>
+
+<p>Helping families choose the right LIC plan for over 18 years.</p>
+
+<p>📞 +91 9618745467</p>
+
+<p>📧 srinivasrm9@gmail.com</p>
+
+<p>🕒 Mon–Sat | 9:00 AM – 7:00 PM</p>
+
+<p>© <span id="year"></span> All Rights Reserved</p>
+
+</footer>
+
+<a
+href="https://wa.me/919618745467"
+class="floating-whatsapp"
+target="_blank">
+
+💬
+
+</a>
+<a
+href="tel:9618745467"
+class="floating-call">
+
+📞
+
+</a>
+<button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+⬆
+</button>
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>M. Srinivasa Rao LIC Admin Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="section-title">
+Customer Enquiries Dashboard
+</h1>
+<button onclick="logoutAdmin()" class="call-btn">
+Logout
+</button>
+<div class="stats">
+
+    <div class="stat-card">
+        <h2 id="totalEnquiries">0</h2>
+        <p>Total</p>
+    </div>
+
+    <div class="stat-card">
+        <h2 id="pendingCount">0</h2>
+        <p>Pending</p>
+    </div>
+
+    <div class="stat-card">
+        <h2 id="contactedCount">0</h2>
+        <p>Contacted</p>
+    </div>
+
+    <div class="stat-card">
+        <h2 id="todayCount">0</h2>
+        <p>Today</p>
+    </div>
+
+</div>
+<button onclick="location.reload()" class="primary-btn">
+🔄 Refresh
+</button>
+<button onclick="exportExcel()" class="primary-btn">
+📥 Export to Excel
+</button>
+<input
+type="text"
+id="searchEnquiry"
+placeholder="Search by Name or Phone..."
+onkeyup="searchEnquiries()"
+style="width:80%;padding:12px;margin:20px auto;display:block;border-radius:10px;">
+
+<select id="policyFilter" onchange="filterByPolicy()">
+
+<option value="All">All Policies</option>
+
+<option value="LIC Jeevan Anand">LIC Jeevan Anand</option>
+
+<option value="LIC Jeevan Labh">LIC Jeevan Labh</option>
+
+<option value="LIC New Endowment">LIC New Endowment</option>
+
+<option value="LIC New Money Back">LIC New Money Back</option>
+
+<option value="LIC Jeevan Umang">LIC Jeevan Umang</option>
+
+</select>
+<div id="enquiryContainer"></div>
+
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-auth-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
+
+<script src="firebase.js"></script>
+
+<script src="admin.js"></script>
+</body>
+</html>

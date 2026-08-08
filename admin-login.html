@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login | M. Srinivasa Rao</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="login-page">
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🔐 Admin Login</h1>
+
+        <p>M. Srinivasa Rao LIC Advisor</p>
+
+        <form id="adminLoginForm">
+
+            <input
+                type="email"
+                id="username"
+                placeholder="Admin Email"
+                autocomplete="username"
+                required>
+
+            <br><br>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                autocomplete="current-password"
+                required>
+
+            <br><br>
+
+            <button
+                type="submit"
+                id="loginButton">
+
+                🔐 LOGIN
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- Firebase -->
+
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-auth-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
+
+<script src="firebase.js"></script>
+
+<script src="admin-login.js"></script>
+
+</body>
+
+</html>
